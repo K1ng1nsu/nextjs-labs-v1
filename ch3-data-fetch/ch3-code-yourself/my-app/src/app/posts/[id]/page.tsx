@@ -1,5 +1,7 @@
 import React from 'react';
 import LikeButton from './LikeButton';
+
+export const dynamicParams = false;
 type Post = {
   id: string;
   userId: string;
@@ -17,8 +19,6 @@ export async function generateStaticParams() {
   const a = posts.slice(0, 10).map((post) => {
     return { id: post.id.toString() };
   });
-
-  console.log(a);
 
   return a;
 }
