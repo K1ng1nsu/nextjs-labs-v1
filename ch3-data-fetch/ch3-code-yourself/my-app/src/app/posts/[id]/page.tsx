@@ -2,6 +2,7 @@ import React from 'react';
 import LikeButton from './LikeButton';
 
 export const dynamicParams = false;
+
 type Post = {
   id: string;
   userId: string;
